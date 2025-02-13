@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+    <title>callie's page</title><!--this changes what the page is called on the tab-->
+    <link rel="shortcut icon" href="tutorial-fav.png"> <!--favicon setting-->
+    <meta charset="UTF-8"> 
+    <!-- //^This probably won’t change anything on your page, especially since you’re running it locally right now. In general, however, it ensures that the browser can read and render all the characters you type into your body – especially important with punctuation and languages other than English.  -->
+
+    <style>
+#quote {
+position:absolute;
+color:white;
+/* background-color:#6eb7c9; */
+text-shadow: 1px 2px 2px #c3eaf4;
+/* border: 6px solid blue; */
+width: 50vw;
+font-family: sans-serif;
+font-size:20px;
+left: 100px;
+top:100px
+
+}
+
+body{
+    background-color:#6eb7c9;
+    overflow-x:hidden;
+    margin:0px;
+    text-align: justify;
+}
+
+#ocean{
+    position: absolute;
+    top:-100px;
+    left:0px;
+    width: 1200px;
+    opacity:.6;
+    border-radius: 15px 50px 0px 100px;
+}
+
+#gems{
+    position: absolute;
+    top:400px;
+  z-index:3;
+    left:-20px;
+    width: 500px;
+    /* opacity:.6; */
+    /* border-radius: 15px 50px 0px 100px; */
+}
+
+#pebbles{
+    position: absolute;
+    top:300px;
+    z-index:1;
+
+    left:50px;
+    width: 1000px;
+    /* opacity:.6; */
+    /* border-radius: 15px 50px 0px 100px; */
+}
+
+#seaglass{
+    position: absolute;
+    top:400px;
+    z-index:2;
+
+    right:-100px;
+    width: 500px;
+
+    transition: width 1s ease-in;
+    /* opacity:.6; */
+    /* border-radius: 15px 50px 0px 100px; */
+}
+
+#seaglass:hover{
+    
+    width: 600px;
+    /* opacity:.6; */
+    /* border-radius: 15px 50px 0px 100px; */
+}
+
+#video{
+    z-index:4;
+
+    position: absolute;
+    bottom:0px;
+    left:500px;
+    width: 500px;
+    opacity:.5;
+    border-radius: 1000px 1000px 200px 200px;
+    filter: grayscale(100%);
+}
+
+
+
+#mylinks:link {
+    color:blue;
+    text-decoration: none;
+}
+
+#mylinks:visited {
+    color:blue;
+    text-decoration: none;
+}
+
+#mylinks:hover {
+    color:red;
+    text-decoration: none;
+}
+
+#mylinks:active {
+    color:blue;
+    text-decoration: none;
+}
+
+#estuary-block{
+    position:absolute;
+    top:100vh;
+}
+
+#estuaries-text{
+    font-family:sans-serif;
+    color: white;
+    font-size:28px;
+    text-shadow: 1px 2px 2px #20373c;
+
+}
+
+#estuary{
+    position:absolute;
+    top:10vh;
+}
+
+#phytoplankton{
+
+   color: rgb(129, 40, 82);
+   transition: color 3s;
+   transition: letter-spacing 3s;
+  
+}
+
+
+#phytoplankton:hover{
+    color: rgb(96,143,88);
+    letter-spacing: 2vw;
+}
+
+#estuary-block{
+
+    background: rgb(110,183,201);
+    background: linear-gradient(180deg, rgba(110,183,201,1) 0%, rgba(9,9,121,1) 34%, rgba(96,143,88,0.7180059523809523) 90%);
+}
+
+
+
+#seawater-block{
+position:absolute;
+top:210vh;
+
+}
+
+#seawater-pic{
+    filter: opacity(50%);
+}
+
+
+#plankton{
+    position:absolute;
+    top: 40vh;
+right:200px;
+}
+
+#plankton2{
+    position:absolute;
+    top: 60vh;
+    left:50px;
+}
+.critter{
+    transition: transform 1s ease-in-out;
+}
+
+.critter:hover{
+    filter:hue-rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#flow{
+    position: relative;
+    top: -95vh; 
+    width:100vh;
+
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<div id="ocean-block">
+<img id = "ocean" src = "ocean.gif">
+
+<img id = "pebbles" src = "pebbles2.png">
+<img id = "gems" src = "gems.png">
+<img id = "seaglass" src = "seaglass.png">
+<video loop controls id="video" src = "rocks.mp4" type = "video/mp4">
+</video>
+
+   <div id="quote"> People, as curious primates, dote on concrete objects that can be seen and fondled. <a id="mylinks" href="https://www.google.com/search?sca_esv=b71b87a039ad9bf1&rlz=1C5CHFA_enUS1057US1057&sxsrf=AHTn8zoxM6EP5b6Cc6Y2F6c6FZCA-ig1JQ:1738727963623&q=god&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBjLjqIC1CYKD9D-DQAQS3Z598VAVBnbpHrmLO7c8q4i2ZQ3WKhKg1rxAlIRezVxw9ZI3fNkoov5wiKn-GvUteZdk9svexd1aCPnH__Uc8IUgdpyeAhJShdjgtFBxiTTC_0C5wxBAriPcxIadyznLaqGpGzbn_4WepT8N6bRG3HQLK-jPDg&sa=X&ved=2ahUKEwiX3oe10quLAxXwmYkEHdPeAuQQtKgLegQIEBAB&biw=1128&bih=871&dpr=1#vhid=sf6ZauUiBTXJgM&vssid=mosaic"> God</a> dwells among the details, not in the realm of pure generality. We must tackle and grasp the larger, encompassing themes of our universe, but we make our best approach through small curiosities that rivet our attention - all those pretty pebbles on the shoreline of knowledge. For the ocean of <a id="mylinks" href ="https://en.wikipedia.org/wiki/Truth">truth </a> washes over the pebbles with every wave, and they rattle and clink with the most wondrous din. 
+    (Stephen Jay Gould)
+   </div>
+
+</div>
+
+<div id="estuary-block">
+
+   <div id="estuaries-text"> Estuaries are incredibly dynamic systems, where temperature, salinity, turbidity, depth and flow all change daily in response to the tides. This dynamism makes estuaries highly productive habitats, but also make it difficult for many species to survive year-round. As a result, estuaries large and small experience strong seasonal variation in their fish communities.[27] In winter, the fish community is dominated by hardy marine residents, and in summer a variety of marine and anadromous fishes move into and out of estuaries, capitalizing on their high productivity.[28] Estuaries provide a critical habitat to a variety of species that rely on estuaries for life-cycle completion. Pacific Herring (Clupea pallasii) are known to lay their eggs in estuaries and bays, surfperch give birth in estuaries, juvenile flatfish and rockfish migrate to estuaries to rear, and anadromous salmonids and lampreys use estuaries as migration corridors.[29] Also, migratory bird populations, such as the black-tailed godwit,[30] rely on estuaries.
+
+    <br>
+    <br>
+    Two of the main challenges of estuarine life are the variability in salinity and sedimentation. Many species of fish and invertebrates have various methods to control or conform to the shifts in salt concentrations and are termed osmoconformers and osmoregulators. <span id="burrowing">>Many animals also burrow to avoid predation and to live in a more stable sedimental environment. </span> However, large numbers of bacteria are found within the sediment which has a very high oxygen demand. This reduces the levels of oxygen within the sediment often resulting in partially anoxic conditions, which can be further exacerbated by limited water flow.
+    
+    <span id="phytoplankton">Phytoplankton are key primary producers in estuaries. They move with the water bodies and can be flushed in and out with the tides. Their productivity is largely dependent upon the turbidity of the water. </span>The main phytoplankton present are diatoms and dinoflagellates which are abundant in the sediment.
+    
+    A primary source of food for many organisms on estuaries, including bacteria, is detritus from the settlement of the sedimentation.
+   </div>
+
+   <img id = "estuary" src = "estuary-copy.png">
+
+
+</div>
+
+<div id="seawater-block">
+
+    <!-- <div id="seawater-text"> PEJOEFJKKGRJGKRKJGRKFRW
+  -->
+    <img id = "seawater-pic" src = "seawater.png">
+    <img id = "plankton" class = "critter" src = "plankton.png">
+    <img id = "plankton2" class = "critter" src = "plankton2.png">
+    <img id = "flow"  src = "eddie-ezgif.com-loop-count.gif">
+
+ 
+ 
+ </div>
+
+
+
+</body>
+
+
+</html>
