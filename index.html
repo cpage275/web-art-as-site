@@ -190,6 +190,41 @@ right:200px;
 
 }
 
+#whirlpool{
+    position:absolute;
+    bottom: 0vh;
+left:100px; 
+width:100vh;
+z-index: 1;
+}
+
+#swirl-button {
+    position: absolute;
+    display: inline-block;
+    bottom: 20vh;
+    left:50vh; 
+    padding: 10px 20px;
+    z-index: 2;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    /* padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white; */
+    border: none;
+    border-radius: 5px;
+    cursor: help;
+    animation: circular-motion 4s linear infinite;
+}
+@keyframes circular-motion {
+    0% { transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
 
     </style>
 </head>
@@ -197,11 +232,11 @@ right:200px;
 <body>
 
 <div id="ocean-block">
-<img id = "ocean" src = "ocean.gif">
+<img alt = "a GIF of the ocean shows waves lapping at the shore" id = "ocean" src = "ocean.gif">
 
-<img id = "pebbles" src = "pebbles2.png">
-<img id = "gems" src = "gems.png">
-<img id = "seaglass" src = "seaglass.png">
+<img alt = "various pebbles are jumbled together forming a shoreline below the ocean" id = "pebbles" src = "pebbles2.png">
+<img alt = "various pebbles are jumbled together forming a shoreline below the ocean" id = "gems" src = "gems.png">
+<img alt = "various pebbles are jumbled together forming a shoreline below the ocean" id = "seaglass" src = "seaglass.png">
 <video loop controls id="video" src = "rocks.mp4" type = "video/mp4">
 </video>
 
@@ -224,7 +259,7 @@ right:200px;
     A primary source of food for many organisms on estuaries, including bacteria, is detritus from the settlement of the sedimentation.
    </div>
 
-   <img id = "estuary" src = "estuary-copy.png">
+   <img alt = "a vibrant and partially-transparent aerial view of an estuary is overlaid on text, with the branches of the river flowing across the screen " id = "estuary" src = "estuary-copy.png">
 
 
 </div>
@@ -233,13 +268,14 @@ right:200px;
 
     <!-- <div id="seawater-text"> PEJOEFJKKGRJGKRKJGRKFRW
   -->
-    <img id = "seawater-pic" src = "seawater.png">
-    <img id = "plankton" class = "critter" src = "plankton.png">
-    <img id = "plankton2" class = "critter" src = "plankton2.png">
-    <img id = "flow"  src = "eddie-ezgif.com-loop-count.gif">
+    <img alt = "a microscopic view of a drop of seawater. Small alien-like creatures like zooplankton and diatoms are visible" id = "seawater-pic" src = "seawater.png">
+    <img alt = "a microscopic plankton" id = "plankton" class = "critter" src = "plankton.png">
+    <img alt = "a microscopic plankton" id = "plankton2" class = "critter" src = "plankton2.png">
+    <img alt = "gif of a pixelated flowing eddy in purple and teal rippling across the screen" id = "flow"  src = "eddie-ezgif.com-loop-count.gif">
 
- 
- 
+    <a href="forest.html" id="swirl-button">Click</a>
+    <img alt = "gif of an underwater swirling whirlpool, with a button circling around on it as if it is caught in the flow" id = "whirlpool"  src = "whirlpool.gif">
+
  </div>
 
 
