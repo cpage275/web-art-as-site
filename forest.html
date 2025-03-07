@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<style>
+@media (max-width: 600px) {
+	body {
+      background-color: red; 
+      }
+}
+
+body {
+      background-color: black; 
+      }
+
+#roots-block{
+
+    font-family:sans-serif;
+    color: #D4D079;
+    font-size:28px;
+    text-shadow: 1px 2px 2px #9E9B4B;
+    cursor: crosshair;
+
+}
+
+#wallpaper{
+    position: absolute;
+    top:-100px;
+    left:0px;
+    width: 1200px;
+    height:100vh;
+    /* opacity:.9; */
+
+}
+
+#tree1{
+
+    position: absolute;
+z-index: 10;
+width:50vw;
+left: 10vw;
+bottom: 80px;
+cursor: help;
+
+}
+
+#tree2{
+position: absolute;
+z-index: 10;
+width:50vw;
+left: 30vw;
+bottom: 80px;
+}
+
+#tree3{
+position: absolute;
+z-index: 10;
+width:50vw;
+left: 30vw;
+bottom: 80px;
+cursor: crosshair;
+}
+
+#tree4{
+position: absolute;
+z-index: 10;
+width:50vw;
+right: -100px;
+bottom: 80px;
+}
+
+#tree5{
+position: absolute;
+z-index: 10;
+width: 40vw;
+left: -100px;
+bottom: 80px;
+/* cursor: crosshair; */
+
+}
+
+#sun{
+position: absolute;
+z-index: 10;
+width: 20vw;
+right: 100px;
+bottom: 50px;
+cursor: help;
+
+
+}
+
+#roots-block{
+    position: absolute;
+    top: 80vh;
+}
+
+#roots{
+
+    position: absolute; 
+    top: 7vh;
+    width: 100vw;
+}
+
+#date-test{
+    position: absolute;
+z-index: 100;
+left: 10px;
+top: 10px;
+font-family: sans-serif;
+    color: #000000;
+    font-size: 28px;
+}
+
+</style>
+
+
+<body>
+
+    <div id="trees-block">
+        <img id = "tree1" src = "tree1.png">
+        <img id = "tree2" src = "tree2.png">
+        <img id = "tree3" src = "tree3.png">
+        <img id = "tree4" src = "tree4.png">
+        <img id = "tree5" src = "tree5.png">
+        <img id = "sun" src = "sun.gif">
+
+
+        <img id = "wallpaper" src = "wallpaper.jpg">
+        <div id ="click-me">
+        <div onclick="innerHTML = Date()" id="date-test"> Click me </div>
+       </div>
+        </div>
+
+    <div id="roots-block">
+
+        <div id="roots-text">Early root growth is one of the functions of the apical meristem located near the tip of the root. The meristem cells more or less continuously divide, producing more meristem, root cap cells (these are sacrificed to protect the meristem), and undifferentiated root cells. The latter become the primary tissues of the root, first undergoing elongation, a process that pushes the root tip forward in the growing medium. Gradually these cells differentiate and mature into specialized cells of the root tissues.[14]
+            Growth from apical meristems is known as primary growth, which encompasses all elongation. Secondary growth encompasses all growth in diameter, a major component of woody plant tissues and many nonwoody plants. For example, storage roots of sweet potato have secondary growth but are not woody. Secondary growth occurs at the lateral meristems, namely the vascular cambium and cork cambium. The former forms secondary xylem and secondary phloem, while the latter forms the periderm.
+            In plants with secondary growth, the vascular cambium, originating between the xylem and the phloem, forms a cylinder of tissue along the stem and root.[citation needed] The vascular cambium forms new cells on both the inside and outside of the cambium cylinder, with those on the inside forming secondary xylem cells, and those on the outside forming secondary phloem cells. As secondary xylem accumulates, the "girth" (lateral dimensions) of the stem and root increases. As a result, tissues beyond the secondary phloem including the epidermis and cortex, in many cases tend to be pushed outward and are eventually "sloughed off" (shed).[citation needed]
+            At this point, the cork cambium begins to form the periderm, consisting of protective cork cells. The walls of cork cells contains suberin thickenings, which is an extra cellular complex biopolymer.[15] The suberin thickenings functions by providing a physical barrier, protection against pathogens and by preventing water loss from the surrounding tissues. In addition, it also aids the process of wound healing in plants.[16] It is also postulated that suberin could be a component of the apoplastic barrier (present at the outer cell layers of roots) which prevents toxic compounds from entering the root and reduces radial oxygen loss (ROL) from the aerenchyma during waterlogging.[17] In roots, the cork cambium originates in the pericycle, a component of the vascular cylinder.[17]
+            The vascular cambium produces new layers of secondary xylem annually.[citation needed] The xylem vessels are dead at maturity (in some) but are responsible for most water transport through the vascular tissue in stems and roots.
+            Tree roots at Port Jackson
+            Tree roots usually grow to three times the diameter of the branch spread, only half of which lie underneath the trunk and canopy. The roots from one side of a tree usually supply nutrients to the foliage on the same side. Some families however, such as Sapindaceae (the maple family), show no correlation between root location and where the root supplies nutrients on the plant.[18]
+        </div>
+     
+        <img id = "roots" src = "roots.png">
+     
+     
+     </div>
+
+
+
+
+
+<script>
+
+
+document.getElementById("sun").onmouseover = function () {
+            document.getElementById("roots").src = "roots2.png";
+            document.body.style.backgroundColor = "#D4D079";
+           document.getElementById("roots-text").style.color = "white";
+       };
+
+document.getElementById("sun").onmouseout = function () {
+           document.getElementById("roots").src = "roots.png";
+            document.body.style.backgroundColor = "black";
+           document.getElementById("roots-text").style.color = "#D4D079";
+       };
+       
+
+
+document.getElementById("click-me").onclick = function() {
+               document.getElementById("date-test").innerHTML = harvardSentences[Math.floor(Math.random() * harvardSentences.length)];
+           }
+
+
+           let harvardSentences = [
+    "The birch canoe slid on the smooth planks.",
+    "Glue the sheet to the dark blue background.",
+    "It's easy to tell the depth of a well.",
+    "These days a chicken leg is a rare dish.",
+    "Rice is often served in round bowls.",
+    "The juice of lemons makes fine punch.",
+    "The box was thrown beside the parked truck.",
+    "The hogs were fed chopped corn and garbage.",
+    "Four hours of steady work faced us.",
+    "Large size in stockings is hard to sell.",
+    "The boy was there when the sun rose.",
+    "A rod is used to catch pink salmon.",
+    "The source of the huge river is the clear spring.",
+    "Kick the ball straight and follow through.",
+    "Help the woman get back to her feet.",
+    "A pot of tea helps to pass the evening.",
+    "Smoky fires lack flame and heat.",
+    "The soft cushion broke the man's fall.",
+    "The salt breeze came across from the sea.",
+    "The girl at the booth sold fifty bonds.",
+    "The small pup gnawed a hole in the sock.",
+    "The fish twisted and turned on the bent hook.",
+    "Press the pants and sew a button on the vest.",
+    "The swan dive was far short of perfect.",
+    "The beauty of the view stunned the young boy.",
+    "Two blue fish swam in the tank.",
+    "Her purse was full of useless trash.",
+    "The colt reared and threw the tall rider.",
+    "It snowed, rained, and hailed the same morning.",
+    "Read verse out loud for pleasure.",
+    "Hoist the load to your left shoulder.",
+    "Take the winding path to reach the lake.",
+    "Note closely the size of the gas tank.",
+    "Wipe the grease off his dirty face.",
+    "Mend the coat before you go out.",
+    "The wrist was badly strained and hung limp.",
+    "The stray cat gave birth to kittens.",
+    "The young girl gave no clear response.",
+    "The meal was cooked before the bell rang.",
+    "What joy there is in living.",
+    "A king ruled the state in the early days.",
+    "The ship was torn apart on the sharp reef.",
+    "Sickness kept him home the third week.",
+    "The wide road shimmered in the hot sun.",
+    "The lazy cow lay in the cool grass.",
+    "Lift the square stone over the fence.",
+    "The rope will bind the seven books at once.",
+    "Hop over the fence and plunge in.",
+    "The friendly gang left the drug store.",
+    "Mesh mire keeps chicks inside.",
+    "The frosty air passed through the coat.",
+    "The crooked maze failed to fool the mouse.",
+    "Adding fast leads to wrong sums.",
+    "The show was a flop from the very start.",
+    "A saw is a tool used for making boards.",
+    "The wagon moved on well oiled wheels.",
+    "March the soldiers past the next hill.",
+    "A cup of sugar makes sweet fudge.",
+    "Place a rosebush near the porch steps.",
+    "Both lost their lives in the raging storm.",
+    "We talked of the slide show in the circus.",
+    "Use a pencil to write the first draft."
+];
+
+</script>
+
+</body>
+
+
+</html>
